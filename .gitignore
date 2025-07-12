@@ -1,0 +1,15 @@
+# Node.js
+node_modules/
+.env
+*.log
+
+# React build
+client/build/
+client/node_modules/
+
+# VS Code config
+.vscode/
+
+# OS-specific
+.DS_Store         # macOS
+Thumbs.db         # Windows
