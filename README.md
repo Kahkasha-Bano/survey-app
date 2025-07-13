@@ -13,7 +13,28 @@
 | Role-based Access (Admin/Viewer) | ⬜      |
 
 
-###Progress Slider Design
+
+#### Project Entry Form (New Survey Form)
+Fields:
+
+Project Name
+
+Client Name
+
+Survey Date
+
+Project Location
+
+File Upload: Allow .dwg and .pdf files
+
+Progress Slider: Let’s use 0% to 100% scale
+
+Optional: Notes / comments
+
+
+
+
+### Progress Slider Design
 Since progress refers to “kitna kaam hua drafting ya survey ka,” you can define:
 
 0% = Survey not started
