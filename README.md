@@ -5,12 +5,12 @@
 | Create New Survey Project Form   | done      |
 | Client Name & Date Field         | done     |
 | File Upload (.pdf, .dwg)         | done      |
-| Progress Slider                  | ⬜      |
-| View Project Details Page        | ⬜      |
-| Edit Project Progress            | ⬜      |
+| Progress Slider                  | done    |
+| View Project Details Page        | done     |
+| Edit Project Progress            | done     |
 | Real-time Sync (Socket.io)       | ⬜      |
-| Filter by Client / Date          | ⬜      |
-| Role-based Access (Admin/Viewer) | ⬜      |
+| Filter by Client / Date          | done     |
+| Role-based Access (Admin/Viewer) | done      |
 
 
 ## Use Case:
