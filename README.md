@@ -191,3 +191,45 @@ Ideal for real-world use where project and payment data are managed together
 | `EMAIL_PASS`                 | SMTP email password / app password       | Secret                      |
 | `FRONTEND_URL`               | React app ka base URL                    | `http://localhost:3000`     |
 | `BASE_API_URL`               | API base path                            | `http://localhost:5000/api` |
+
+
+server/
+│
+├── controllers/
+│   └── projectController.js
+│
+├── middleware/
+│   └── auth.js
+│
+├── models/
+│   ├── Survey.js
+│   └── User.js
+│
+├── routes/
+│   ├── auth.js
+│   └── survey.js
+│
+├── uploads/
+│   └── [uploaded files like PDFs, DWG etc.]
+│
+├── .env
+├── package.json
+├── server.js
+
+client/
+├── public/
+├── src/
+│   ├── pages/
+│   │   ├── CreateProject.js
+│   │   ├── Dashboard.js
+│   │   ├── EditProject.js
+│   │   ├── Login.js
+│   │   ├── ProtectedRoute.js
+│   │   ├── Signup.js
+│   │   └── SurveyDetail.js
+│   ├── App.js
+│   ├── index.js
+│   ├── reportWebVitals.js
+│   └── setupTests.js
+├── package.json
+└── README.md
