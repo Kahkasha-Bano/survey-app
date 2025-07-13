@@ -11,3 +11,17 @@
 | Real-time Sync (Socket.io)       | ⬜      |
 | Filter by Client / Date          | ⬜      |
 | Role-based Access (Admin/Viewer) | ⬜      |
+
+
+###Progress Slider Design
+Since progress refers to “kitna kaam hua drafting ya survey ka,” you can define:
+
+0% = Survey not started
+
+25% = Survey completed
+
+50% = Drafting started
+
+75% = Drafting done, review pending
+
+100% = Final drawings uploaded and project closed
