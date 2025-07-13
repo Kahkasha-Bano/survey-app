@@ -175,3 +175,19 @@ Auto-updated fields: amountReceived, paymentStatus, and lastPaymentDate
 Clean API for adding payments directly into the project document (no separate collection needed)
 
 Ideal for real-world use where project and payment data are managed together
+
+
+
+| Variable                     | Purpose                                  | Example                     |
+| ---------------------------- | ---------------------------------------- | --------------------------- |
+| `PORT`                       | Server kis port pe chalega               | `3000`, `5000`              |
+| `MONGO_URI` / `DATABASE_URL` | MongoDB / PostgreSQL ka URI              | `mongodb+srv://...`         |
+| `JWT_SECRET`                 | JWT tokens sign/verify karne ke liye key | Long random string          |
+| `JWT_EXPIRATION`             | JWT token kitni der tak valid rahe       | `1h`, `7d`                  |
+| `NODE_ENV`                   | Project environment                      | `development`, `production` |
+| `CORS_ORIGIN`                | Kis frontend domain ko allow kare        | `http://localhost:3000`     |
+| `CLOUDINARY_URL`             | File upload ke liye (images/PDF)         | Cloudinary config           |
+| `EMAIL_USER`                 | SMTP email service user                  | Gmail/email provider        |
+| `EMAIL_PASS`                 | SMTP email password / app password       | Secret                      |
+| `FRONTEND_URL`               | React app ka base URL                    | `http://localhost:3000`     |
+| `BASE_API_URL`               | API base path                            | `http://localhost:5000/api` |
