@@ -163,4 +163,15 @@ Toast notifications for success/error
 
 Dark mode toggle
 
+## Payment Tracking (Embedded in Project)
+Each project in the system includes an embedded array of payment records, allowing tight coupling between survey work and its financial transactions. This enables:
 
+Easy tracking of total amount, received payments, and dues
+
+Support for multiple payments per project with fields like amount, mode, date, notes, and invoice file link
+
+Auto-updated fields: amountReceived, paymentStatus, and lastPaymentDate
+
+Clean API for adding payments directly into the project document (no separate collection needed)
+
+Ideal for real-world use where project and payment data are managed together
