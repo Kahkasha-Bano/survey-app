@@ -1,0 +1,97 @@
+.create-form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.create-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.create-form input,
+.create-form select {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.location-btn,
+.submit-btn {
+  padding: 10px 16px;
+  margin: 10px 5px 0 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.location-btn {
+  background-color: #0077cc;
+  color: white;
+}
+
+.location-btn:hover {
+  background-color: #005fa3;
+}
+
+.submit-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+/* ✅ RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  .create-form {
+    margin: 20px 15px;
+    padding: 20px;
+  }
+
+  .create-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .location-btn,
+  .submit-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-form {
+    padding: 15px;
+  }
+
+  .create-form h2 {
+    font-size: 1.3rem;
+  }
+
+  .create-form input,
+  .create-form select {
+    font-size: 15px;
+    padding: 8px 10px;
+  }
+
+  .location-btn,
+  .submit-btn {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+

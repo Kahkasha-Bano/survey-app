@@ -1,35 +1,28 @@
 const mongoose = require('mongoose');
 
-const surveySchema = new mongoose.Schema({
-  clientName: String,
-  surveyDate: String,
-  surveyedBy: String,
-  filePath: String,
-  imagePath: String,
-  latitude: String,
-  longitude: String,
-  progress: String
-});
 const PaymentSchema = new mongoose.Schema({
   amount: Number,
-  mode: { type: String, enum: ['Cash', 'Bank Transfer', 'UPI', 'Cheque'] },
   paymentDate: Date,
   notes: String,
 }, { _id: false });
 
-const SurveySchema = new mongoose.Schema({
-  // your fields...
-  totalAmount: Number,
-  amountReceived: { type: Number, default: 0 },
-  paymentStatus: {
-    type: String,
-    enum: ['Unpaid', 'Partial', 'Paid'],
-    default: 'Unpaid'
-  },
-  lastPaymentDate: Date,
-  payments: [PaymentSchema],
-});
 
+const SurveySchema = new mongoose.Schema({
+  clientName: String,
+  surveyDate: String, // or Date if you want
+  surveyedBy: String,
+  latitude: String,
+  longitude: String,
+  progress: String,
+   totalAmount: Number,
+  amountReceived: { type: Number, default: 0 },
+   lastPaymentDate: Date,
+  payments: [PaymentSchema],
+   file:String,
+  images: [String], // Array of image URLs for additional images
+
+
+});
 
 module.exports = mongoose.model('Survey', SurveySchema);
 
