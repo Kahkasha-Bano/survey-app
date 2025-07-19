@@ -16,7 +16,7 @@ const SurveyForm = () => {
     amountReceived: '',
   });
 
-  const [file, setfile] = useState(null);
+  const [file, setFile] = useState(null);
   const [images, setImages] = useState([]);
 
   const handleChange = (e) =>
@@ -94,7 +94,7 @@ const SurveyForm = () => {
     type="file"
     className="form-control"
     accept=".pdf"
-    onChange={(e) => setfile(e.target.files[0])}
+    onChange={(e) => setFile(e.target.files[0])}
   />
 </div>
 
