@@ -1,0 +1,16 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Good practice for consistent box model */
+  /* You can keep your global background color here if you want it on all pages */
+  background-color: #071d2d; /* Example from your previous CSS */
+  font-family: 'Inter', sans-serif; /* Example from your previous CSS */
+  color: white; /* Example from your previous CSS */
+}
+.custom-navy-bg:hover {
+  background-color: #1a4f77 !important;
+  border-color: #1a4f77 !important;
+}
+.custom-navy-text {
+  color: #0b2d47 !important;
+}

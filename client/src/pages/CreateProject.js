@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import '../styles/CreateProject.css';
+//import '../index.css';
+import '../styles/CreateProject.css'; // Assuming you have a CSS file for styling
 
 const SurveyForm = () => {
   const navigate = useNavigate();
@@ -18,7 +19,8 @@ const SurveyForm = () => {
 
   const [file, setfile] = useState(null);
   const [images, setImages] = useState([]);
-
+ 
+   
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
 
@@ -35,6 +37,9 @@ const SurveyForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData();
+    console.log(e.target.files);
+   console.log(images);
+
 
     // Append form fields
     Object.entries(form).forEach(([key, val]) =>
@@ -148,6 +153,7 @@ const SurveyForm = () => {
     </form>
   );
 };
+
 
 export default SurveyForm;
 

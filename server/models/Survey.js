@@ -22,7 +22,7 @@ const SurveySchema = new mongoose.Schema({
   images: [String], // Array of image URLs for additional images
 
 
-});
+},{timestamps: true});
 
 module.exports = mongoose.model('Survey', SurveySchema);
 

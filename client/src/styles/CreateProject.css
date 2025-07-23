@@ -11,7 +11,7 @@
 .create-form h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: #333;
+  color: #0b2d47;
   font-size: 1.8rem;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .location-btn {
-  background-color: #0077cc;
+  background-color: #0b2d47;
   color: white;
 }
 
@@ -47,12 +47,12 @@
 }
 
 .submit-btn {
-  background-color: #28a745;
+  background-color: #0b2d47;
   color: white;
 }
 
 .submit-btn:hover {
-  background-color: #218838;
+  background-color: #005fa3;
 }
 
 /* ✅ RESPONSIVE STYLES */
