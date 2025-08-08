@@ -56,7 +56,7 @@ const SurveyForm = () => {
 
 
     try {
-      await axios.post('http://localhost:5000/api/survey', formData, {
+      await axios.post(`${process.env.REACT_APP_API_URL}/api/survey`, formData, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
           'Content-Type': 'multipart/form-data',
