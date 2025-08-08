@@ -48,7 +48,8 @@ const SurveyForm = () => {
 
     // Append PDF file
     if (file) {
-      formData.append('file', file);
+     formData.append('pdf', file);   
+
     }
 
     // Append multiple images
