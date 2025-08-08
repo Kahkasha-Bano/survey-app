@@ -4,7 +4,7 @@ import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard';
 import CreateProject from './pages/CreateProject';
 import EditProject from './pages/EditProject';
-import ProtectedRoute from './pages/ProtectedRoute';
+import ProtectedRoute from './pages/protectedRoute';
  import SurveyDetail from './pages/SurveyDetail';
 
 function App() {
