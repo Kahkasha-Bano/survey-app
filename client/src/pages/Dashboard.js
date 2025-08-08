@@ -118,15 +118,15 @@ const Dashboard = () => {
     navigate(`/survey/${surveyId}`);
   };
 
-  // // Function to generate Gravatar URL
-  // const getGravatarUrl = (email, size = 40) => {
-  //   if (!email) {
-  //     // Return a default image if email is not available
-  //     return `https://www.gravatar.com/avatar/?d=mp&s=${size}`; // 'mp' for mystery person
-  //   }
-  //   const hash = md5(email.trim().toLowerCase());
-  //   return `https://www.gravatar.com/avatar/${hash}?d=identicon&s=${size}`; // 'identicon' for unique geometric pattern
-  // };
+  // Function to generate Gravatar URL
+  const getGravatarUrl = (email, size = 40) => {
+    if (!email) {
+      // Return a default image if email is not available
+      return `https://www.gravatar.com/avatar/?d=mp&s=${size}`; // 'mp' for mystery person
+    }
+    const hash = md5(email.trim().toLowerCase());
+    return `https://www.gravatar.com/avatar/${hash}?d=identicon&s=${size}`; // 'identicon' for unique geometric pattern
+  };
 
   // Show a loading state if user data is still being fetched
   if (loadingUser) {
@@ -178,11 +178,11 @@ const Dashboard = () => {
               aria-expanded="false"
               style={{ width: '40px', height: '40px', overflow: 'hidden' }}
             >
-              {/* <img
+              <img
                 src={getGravatarUrl(currentUser.email)} // Use Gravatar URL from user email
                 alt={`${currentUser.name}'s Profile`}
                 className="img-fluid rounded-circle"
-              /> */}
+              />
             </button>
             <ul className="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="profileDropdown">
               <li><h6 className="dropdown-header">{currentUser.name} ({currentUser.role})</h6></li> {/* Display user's name and role */}

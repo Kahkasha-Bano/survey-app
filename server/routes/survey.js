@@ -8,7 +8,7 @@ const { verifyToken, requireRole } = require('../middleware/auth');
 const upload = require('../middleware/uploads');
 
 // CREATE Survey
-router.post('/', verifyToken, requireRole(['admin', 'supervisor','user']), upload.fields([{ name: 'images' }, { name: 'pdf' }]), async (req, res) => {
+router.post('/', verifyToken, upload.fields([{ name: 'images' }, { name: 'pdf' }]), async (req, res) => {
   try {
     const { clientName, surveyDate, location, progress } = req.body;
     const newSurvey = new Survey({ clientName, surveyDate, location, progress });
@@ -56,7 +56,7 @@ router.post('/', verifyToken, requireRole(['admin', 'supervisor','user']), uploa
 });
 
 // GET all surveys
-router.get('/', verifyToken, async (req, res) => {
+router.get('/all', verifyToken, async (req, res) => {
   try {
     const surveys = await Survey.find().sort({ surveyDate: -1 });
     res.json(surveys);
